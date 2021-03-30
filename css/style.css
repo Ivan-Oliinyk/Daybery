@@ -65,8 +65,8 @@ a {
     transition: all 0.4s;
 }
 
-.header__contacts_social .facebook a,
-.header__contacts_social .instagram a {
+.header__contacts_social a,
+.contact_social a {
     display: block;
     font-size: 24px;
     background-color: #4e4192;
@@ -206,7 +206,8 @@ a {
 
 .about-us_content,
 .servises_content,
-.Our-team_content {
+.Our-team_content,
+.contact_content {
     padding: 60px 0 10px 30px;
 }
 
@@ -217,11 +218,12 @@ a {
 }
 
 .about-us_title h2,
-.servises_title h2 {
+.servises_title h2,
+.contact_title h2 {
     font-size: 60px;
-    letter-spacing: 4px;
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .line {
@@ -393,7 +395,7 @@ a {
 .audit-profoile__text {
     max-width: 800px;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .audit-profoile__text h2 {
@@ -417,6 +419,8 @@ a {
     color: #fff;
     margin-right: 40px;
     display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .audit-profile_input::placeholder {
@@ -466,14 +470,14 @@ a {
 }
 
 .Our-team__content_box {
-    margin: 30px 50px 0;
-    width: 350px;
+    margin: 30px 25px 0;
+    width: 390px;
     font-family: Century Gothic;
     font-weight: bold;
 }
 
 .Our-team__content_box_text {
-    margin-left: 80px;
+    margin-left: 115px;
     width: 270px;
 }
 
@@ -503,8 +507,9 @@ a {
 }
 
 .Our-team__content_box_img {
-    width: 280px;
-    height: 450px;
+    width: 220px;
+    height: 350px;
+    margin: 0 auto;
 }
 
 .Our-team__content_box_img_victoria {
@@ -512,8 +517,112 @@ a {
 }
 
 .Our-team__content_box_descr {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 28px;
     margin-top: 20px;
+}
+
+.contact {
+    color: #fff;
+    position: relative;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 30px 30px;
+    font-family: Century Gothic;
+}
+
+.contact_phone {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact__adress_text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_social {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_social a {
+    margin: 0 10px;
+}
+
+.contact_social .instagram  a{
+    padding: 7px 10px 6px;
+}
+
+.contact_social a {
+    width: 40px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.content__form_text {
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.content__form_text .title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.contact__input {
+    margin-bottom: 20px;
+    padding: 20px 25px;
+    border-radius: 5px;
+    font-family: Century Gothic;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    border: 3px solid #5749A6;
+}
+
+.contact_btn {
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-family: Century Gothic;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #5749A6;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.foorer {
+    color: #fff;
+    background-image: linear-gradient(to bottom, #5749A6, #000);
+    padding: 50px 0 80px;
+}
+
+.foorer .item__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.foorer .item__box .item {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
 }

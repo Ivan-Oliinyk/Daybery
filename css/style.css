@@ -293,6 +293,7 @@ a {
 
 .servises__content {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     padding: 50px 0 30px;
     justify-content: center;

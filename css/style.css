@@ -6,6 +6,20 @@ body {
     background-color: black;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4e4192;
+}
+
+
+
 a {
     color: #fff;
 }

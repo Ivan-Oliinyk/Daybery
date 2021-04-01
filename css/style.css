@@ -482,11 +482,37 @@ a {
 
 .Our-team__content {
     display: flex;
+    position: relative;
+}
+
+.offer__slider-inner {
+    display: flex;
+    padding: 0 40px;
+}
+
+.slide__arrow {
+    width: 40px;
+    height: 100px;
+    background: url("../img/arrow.png") center center/contain no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+    top: 215px;
+}
+
+.offer__slider-prev {
+    left: 0;
+}
+
+.offer__slider-next {
+    transform: rotate(180deg);
+    right: 0;
 }
 
 .Our-team__content_box {
     margin: 30px 25px 0;
-    width: 390px;
+    /* width: 390px; */
+    width: calc(100%/3);
     font-family: Century Gothic;
     font-weight: bold;
 }
@@ -521,6 +547,10 @@ a {
     display: block;
 }
 
+.Our-team__content_box_sub-text:nth-child(2) {
+    text-align: right;
+}
+
 .Our-team__content_box_img {
     width: 220px;
     height: 350px;
@@ -529,6 +559,34 @@ a {
 
 .Our-team__content_box_img_victoria {
     background: url("../img/team1.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_oleksand {
+    background: url("../img/team2.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_angelina {
+    background: url("../img/team3.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_anna {
+    background: url("../img/team4.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_eduard {
+    background: url("../img/team5.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_ivan {
+    background: url("../img/team6.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_dasha {
+    background: url("../img/team7.jpg") center center/contain no-repeat;
+}
+
+.Our-team__content_box_img_andrey {
+    background: url("../img/team8.jpg") center center/contain no-repeat;
 }
 
 .Our-team__content_box_descr {

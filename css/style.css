@@ -18,14 +18,12 @@ body {
     background: #4e4192;
 }
 
-
-
 a {
     color: #fff;
 }
 
 .content-wrapper {
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -107,6 +105,10 @@ a {
     font-weight: bold;
 }
 
+.hamburger {
+    display: none;
+  }
+
 .header__nav .item {
     margin: 0 25px 0 0;
     border-right: 2px solid #fff;
@@ -122,7 +124,6 @@ a {
 
 .first-block_wrapper {
     background-image: linear-gradient(to top right, #5749A6, #000);
-    min-height: 600px;
 }
 
 .wrapper_logo {
@@ -140,7 +141,6 @@ a {
 }
 
 .block__aside {
-    min-height: 400px;
     width: 300px;
     background-color: #4D185A;
     color: #fff;
@@ -154,8 +154,8 @@ a {
 }
 
 .all__team {
-    background: url("../img/photo-all-team.jpg") 100% 100% / contain no-repeat;
-    min-height: 456px;
+    background: url("../img/photo-all-team.jpg") center center / contain no-repeat;
+    height: 456px;
     position: relative;
     box-shadow: inset -15px 15px 30px #000;
 }
@@ -254,12 +254,12 @@ a {
     padding: 50px 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .info-box {
     width: 22%;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     margin-bottom: 50px;
 }
 

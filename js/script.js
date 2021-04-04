@@ -2,6 +2,25 @@
 
 window.addEventListener("DOMContentLoaded", () => {
 
+    // плавный скролл по якорям
+    function runSmothLinks () {
+        const smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+        for (let smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        };
+    }
+
+    runSmothLinks ();
+
     const hederNavItems = document.querySelectorAll('.header__nav .item');
 
     hederNavItems[hederNavItems.length - 1].style.borderRight = 0; //Убераем крайний правый border в последнем item nav
@@ -62,50 +81,65 @@ window.addEventListener("DOMContentLoaded", () => {
     
     runModalWindows();
 
-    //функция сдайдера
-    function runSlider() {
-        const slides = document.querySelectorAll('.offer__slide'),
-              prev = document.querySelector('.offer__slider-prev'),
-              next = document.querySelector('.offer__slider-next'),
-              slidesWrapper = document.querySelector('.offer__slider-wrapper'),
-              slidesField = document.querySelector('.offer__slider-inner'),
-            //   width = window.getComputedStyle(slides[0]).width;
-              width = window.getComputedStyle(slidesWrapper).width;
-        
-        let offset = 0;
+    // сдайдер
+        //1
+    const slides = document.querySelectorAll('.offer__slide'),
+          prev = document.querySelector('.offer__slider-prev'),
+          next = document.querySelector('.offer__slider-next'),
+          slidesWrapper = document.querySelector('.offer__slider-wrapper'),
+          slidesField = document.querySelector('.offer__slider-inner'),
+          width = window.getComputedStyle(slidesWrapper).width;
     
-        slidesField.style.width = 33 * slides.length + '%';
-        slidesField.style.display = 'flex';
-        slidesField.style.transition = '0.5s all';
-    
-        slidesWrapper.style.overflow = 'hidden';
-    
-        slides.forEach(slide => {
-            slide.style.width = width;
-        });
-    
-        next.addEventListener('click', () => {
-            
-            if (offset == +width.slice(0, width.length -2) * (slides.length - 3)) {
-                offset = +width.slice(0, width.length -2) * (slides.length - 3);
-            } else {
-                offset += +width.slice(0, width.length - 2);
-            }
-    
-            slidesField.style.transform =`translateX(-${offset/3}px)`;
-        });
-    
-        prev.addEventListener('click', () => {
-            if (offset == 0) {
-                offset = 0;
-            } else {
-                offset -= +width.slice(0, width.length - 2);
-            }
-    
-            slidesField.style.transform =`translateX(-${offset/3}px)`;
-        });
-    }
+    let offset = 0;
 
-    runSlider();
+    slidesField.style.width = 100/3 * slides.length + '%';
+    slidesField.style.display = 'flex';
+    slidesField.style.transition = '0.5s all';
+    slidesWrapper.style.overflow = 'hidden';
+
+    slides.forEach(slide => {
+        slide.style.width = width/3;
+    });
+
+    next.addEventListener('click', () => {
+        
+        if (offset == +width.slice(0, width.length -2) * (slides.length - 3)) {
+            offset = +width.slice(0, width.length -2) * (slides.length - 3);
+        } else {
+            offset += +width.slice(0, width.length - 2);
+        }
+
+        slidesField.style.transform =`translateX(-${offset/3}px)`;
+    });
+
+    prev.addEventListener('click', () => {
+        if (offset == 0) {
+            offset = 0;
+        } else {
+            offset -= +width.slice(0, width.length - 2);
+        }
+
+        slidesField.style.transform =`translateX(-${offset/3}px)`;
+    });
+    
+
+    const linkToIvan = document.querySelector('.link_ivan'),
+          linkEduard = document.querySelector('.link_eduard');
+
+    linkToIvan.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * (slides.length - 3);
+        slidesField.style.transform = `translateX(-${(offset/3)}px)`;
+    });
+
+    linkEduard.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * (slides.length - 3);
+        slidesField.style.transform = `translateX(-${offset/3}px)`;
+    });
+
+    
+
+    
 
 });

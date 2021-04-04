@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaiBery</title>
+    <link rel="shortcut icon" href="img/daibetyIcon.jpg" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="header content-wrapper">
@@ -26,20 +28,20 @@
                     <button>Заказать звонок</button>
                 </div>
                 <div class="facebook">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/Daiberyagency-102277114855604/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </div>
                 <div class="instagram">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/daibery.agency" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
         <nav class="header__nav_wrapper">
-            <ul class="header__nav">
+            <ul class="header__nav menu">
                 <li class="item">
-                    <a href="#">О нас</a>
+                    <a href="#aboutUs">О нас</a>
                 </li>
                 <li class="item">
-                    <a href="#">Услуги</a>
+                    <a href="#servises">Услуги</a>
                 </li>
                 <li class="item">
                     <a href="#">Прайс</a>
@@ -48,9 +50,14 @@
                     <a href="#">Портфолио</a>
                 </li>
                 <li class="item">
-                    <a href="#">Контакты</a>
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
@@ -71,17 +78,17 @@
             </div>
             <div class="all__team">
                 <a href="#" class='link__team-membres link_anna'></a>
-                <a href="#" class='link__team-membres link_eduard'></a>
-                <a href="#" class='link__team-membres link_victoria'></a>
+                <a href="#slide_eduard" class='link__team-membres link_eduard'></a>
+                <a href="#slide_victoria" class='link__team-membres link_victoria'></a>
                 <a href="#" class='link__team-membres link_sasha'></a>
                 <a href="#" class='link__team-membres link_angelina'></a>
-                <a href="#" class='link__team-membres link_ivan'></a>
+                <a href="#slide_ivan" class='link__team-membres link_ivan'></a>
             </div>
         </div>
     </section>
 
     <!-- about us -->
-    <section class="about-us">
+    <section class="about-us" id="aboutUs">
         <div class="content-wrapper">
             <div class="line"></div>
             <div class="about-us_content">
@@ -146,7 +153,7 @@
     </section>
 
     <!-- servises -->
-    <section class="servises">
+    <section class="servises" id="servises">
         <div class="content-wrapper">
             <div class="line"></div>
             <div class="servises_content">
@@ -374,7 +381,7 @@
                 <div class="offer__slider-next slide__arrow"></div>
                 <div class="offer__slider-inner">
                     <!-- victoria -->
-                    <div class="Our-team__content_box offer__slide offer-slider">
+                    <div class="Our-team__content_box offer__slide offer-slider" id="slide_victoria">
                         <div class="Our-team__content_box_text">
                             <div class="title_substrate">
                                 <h3>
@@ -462,7 +469,7 @@
                         </div>
                     </div>
 
-                    <div class="Our-team__content_box offer__slide">
+                    <div class="Our-team__content_box offer__slide" id ="slide_eduard">
                         <div class="Our-team__content_box_text">
                             <div class="title_substrate">
                                 <h3>
@@ -485,7 +492,7 @@
                         </div>
                     </div>
 
-                    <div class="Our-team__content_box offer__slide">
+                    <div class="Our-team__content_box offer__slide" id="slide_ivan">
                         <div class="Our-team__content_box_text">
                             <div class="title_substrate">
                                 <h3>
@@ -557,7 +564,7 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section class="contact" id="contacts">
         <div class="content-wrapper">
             <div class="line"></div>
             <div class="contact_content">
@@ -576,10 +583,10 @@
                     </div>
                     <div class="contact_social">
                         <div class="facebook">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/Daiberyagency-102277114855604/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </div>
                         <div class="instagram">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/daibery.agency" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -601,10 +608,18 @@
     <footer class="foorer">
         <nav class="content-wrapper">
             <ul class="item__box">
-                <li class="item"><a href="#"></a>О нас</li>
-                <li class="item"><a href="#"></a>Услуги</li>
-                <li class="item"><a href="#"></a>Портфолио</li>
-                <li class="item"><a href="#"></a>Прайс</li>
+                <li class="item">
+                    <a href="#aboutUs">О нас</a>
+                </li>
+                <li class="item">
+                    <a href="#servises">Услуги</a>
+                </li>
+                <li class="item">
+                    <a href="#">Портфолио</a>
+                </li>
+                <li class="item">
+                    <a href="#">Прайс</a>
+                </li>
             </ul>
         </nav>
     </footer>

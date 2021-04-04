@@ -1,0 +1,398 @@
+@media (min-width: 1920px) {
+    .line {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .content-wrapper {
+        max-width: 1200px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    .all__team {
+        height: 414px;
+    }
+
+    .link_eduard {
+        top: -18px;
+        left: 190px;
+    }
+
+    .link_victoria {
+        top: 200px;
+        left: 335px;
+    }
+
+    .link_sasha {
+        top: 260px;
+        left: 620px;
+    }
+
+    .link_angelina {
+        top: -7px;
+        left: 724px;
+    }
+
+    .link_ivan {
+        top: 240px;
+        left: 972px;
+    }
+
+    .about-us_title h2,
+    .servises_title h2,
+    .contact_title h2 {
+        font-size: 55px;
+    }
+
+    .about-us_content,
+    .servises_content,
+    .Our-team_content,
+    .contact_content {
+        padding: 40px 0 10px 30px;
+    }
+
+    .line {
+        top: 70px;
+    }
+
+    .info-box_text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .content-wrapper {
+        max-width: 992px;
+    }
+
+    .wrapper_logo {
+        min-height: 290px;
+    }
+
+    .logo {
+        margin-left: 141px;
+        margin-top: 15px;
+        height: 208px;
+        width: 590px;
+    }
+
+    .block__aside {
+        width: 240px;
+        font-size: 20px;
+    }
+
+    .all__team {
+        height: 343px;
+    }
+
+    .link_anna {
+        top: 229px;
+        left: 5px;
+    }
+
+    .link_eduard {
+        top: -20px;
+        left: 148px;
+    }
+
+    .link_victoria {
+        top: 165px;
+        left: 245px;
+    }
+
+    .link_sasha {
+        top: 210px;
+        left: 506px;
+    }
+
+    .link_angelina {
+        top: -12px;
+        left: 580px;
+    }
+
+    .link_ivan {
+        top: 190px;
+        left: 780px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content-wrapper {
+        max-width: 768px;
+    }
+
+    .wrapper_logo {
+        min-height: 200px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-top: 1px;
+        height: 152px;
+        width: 445px;
+    }
+
+    .block__aside {
+        width: 220px;
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .all__team {
+        height: 265px;
+    }
+    
+    .link__team-membres {
+        width: 130px;
+        min-height: 38px;
+    }
+
+    .link_anna {
+        top: 195px;
+        left: 20px;
+    }
+
+    .link_eduard {
+        top: -16px;
+        left: 112px;
+    }
+
+    .link_victoria {
+        top: 130px;
+        left: 200px;
+    }
+
+    .link_sasha {
+        top: 150px;
+        left: 398px;
+    }
+
+    .link_angelina {
+        top: -7px;
+        left: 440px;
+    }
+
+    .link_ivan {
+        top: 160px;
+        left: 595px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        max-width: 576px;
+    }
+
+    .wrapper_logo {
+        min-height: 140px;
+    }
+
+    .logo {
+        margin-left: 45px;
+        margin-top: 10px;
+        height: 100px;
+        width: 330px;
+    }
+
+    .block__aside {
+        width: 140px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-left: 20px;
+    }
+
+    .all__team {
+        height: 199px;
+    }
+
+    .link__team-membres {
+        width: 100px;
+        min-height: 37px;
+    }
+
+    .link_anna {
+        top: 124px;
+        left: 0px;
+    }
+
+    .link_eduard {
+        top: -20px;
+        left: 81px;
+    }
+
+    .link_victoria {
+        top: 97px;
+        left: 148px;
+    }
+
+    .link_sasha {
+        top: 110px;
+        left: 297px;
+    }
+
+    .link_angelina {
+        top: -16px;
+        left: 334px;
+    }
+
+    .link_ivan {
+        top: 115px;
+        left: 452px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .content-wrapper {
+        max-width: 460px;
+    }
+
+    .logo {
+        margin-left: 0px;
+        margin-top: 10px;
+        height: 100px;
+        width: 306px;
+    }
+
+    .all__team {
+        height: 159px;
+        box-shadow: inset -6px 1px 30px #000;
+    }
+
+    .link_anna {
+        top: 99px;
+        left: 0px;
+    }
+
+    .link_eduard {
+        top: -21px;
+        left: 58px;
+    }
+
+    .link_victoria {
+        top: 69px;
+        left: 100px;
+    }
+
+    .link_sasha {
+        top: 80px;
+        left: 239px;
+    }
+
+    .link_angelina {
+        top: -24px;
+        left: 254px;
+    }
+
+    .link_ivan {
+        top: 80px;
+        left: 347px;
+    }
+}
+
+@media (max-width: 460px) {
+    .content-wrapper {
+        max-width: 320px;
+    }
+
+    .wrapper_logo {
+        min-height: 95px;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-top: 10px;
+        height: 62px;
+        width: 190px;
+    }
+
+    .block__aside {
+        width: 82px;
+        font-size: 10px;
+        line-height: 16px;
+        padding-left: 10px;
+    }
+
+    .all__team {
+        height: 110px;
+    }
+
+    .link__team-membres {
+        width: 80px;
+        min-height: 23px;
+    }
+
+    .link_anna {
+        top: 82px;
+        left: -2px;
+    }
+
+    .link_eduard {
+        top: -11px;
+        left: 38px;
+    }
+
+    .link_victoria {
+        top: 53px;
+        left: 58px;
+    }
+
+    .link_sasha {
+        top: 70px;
+        left: 160px;
+    }
+
+    .link_angelina {
+        top: -15px;
+        left: 162px;
+    }
+
+    .link_ivan {
+        top: 59px;
+        left: 235px;
+    }
+}
+
+@media (max-width: 320px) {
+    .content-wrapper {
+        max-width: 300px;
+    }
+
+    .all__team {
+        height: 104px;
+    }
+
+    .link_eduard {
+        top: -13px;
+        left: 31px;
+    }
+
+    .link_victoria {
+        top: 50px;
+        left: 52px;
+    }
+
+    .link_sasha {
+        top: 70px;
+        left: 145px;
+    }
+
+    .link_angelina {
+        top: 37px;
+        left: 154px;
+    }
+
+    .link_ivan {
+        top: 58px;
+        left: 207px;
+    }
+
+
+}

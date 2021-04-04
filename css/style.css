@@ -7,7 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -212,7 +212,6 @@ a {
 .servises {
     position: relative;
     background-color: #000;
-    min-height: 500px;
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-bottom: 30px;

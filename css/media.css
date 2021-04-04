@@ -63,6 +63,22 @@
     .info-box_text {
         font-size: 15px;
     }
+
+    .servises__content {
+        padding: 0px 0 20px;
+    }
+
+    .servises__content_box {
+        width: 369px;
+        height: 290px;
+    }
+
+    .content-wrapper_img {
+        width: 350px;
+        height: 350px;
+        top: 100px;
+        left: -5px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -119,6 +135,115 @@
         top: 190px;
         left: 780px;
     }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 45px;
+    }
+
+    .line {
+        top: 64px;
+    }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 40px;
+    }
+
+    .about-us__info {
+        padding: 30px 30px 0;
+    }
+
+    .info-box {
+        width: 20%;
+        margin-bottom: 35px;
+        margin-right: 10px;
+    }
+
+    .info-box_title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .info-box_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .servises__content_box {
+        width: 304px;
+        height: 235px;
+    }
+
+    .modal__content {
+        width: 500px;
+        font-size: 18px;
+    }    
+
+    .modal__content h3 {
+        padding: 7px;
+        font-size: 24px;
+    }
+
+    .modal__content {
+        padding-bottom: 15px;
+    }
+
+    .modal__content .bold-text {
+        font-size: 20px;
+    }
+
+    .modal__content .modifity-text {
+        font-size: 18px;
+    }
+
+    .modal__content_wrapper {
+        padding: 10px 10px 10px 15px;
+    }
+
+    .modal__content .modal_price {
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .modal_btn {
+        margin: 15px auto 0;
+    }
+
+    .content-wrapper_img {
+        width: 300px;
+        height: 300px;
+        top: 35px;
+        left: 78px;
+    }
+
+    .audit-profile__text_wrapper {
+        width: 600px;
+    }
+
+    .audit-profile__box {
+        padding: 50px 0;
+        margin-left: 0;
+    }
+
+    .audit-profoile__text h2 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .audit-profoile__text {
+        max-width: 750px;
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .audit-profile_input {
+        font-size: 18px;
+    }
+
+    .audit-profile_btn {
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -181,6 +306,82 @@
     .link_ivan {
         top: 160px;
         left: 595px;
+    }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 33px;
+    }
+
+    .line {
+        top: 58px;
+    }
+
+    .info-box_title {
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+
+    .info-box_title {
+        font-size: 24px;
+    }
+
+    .info-box_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn__wrapper {
+        padding: 8px 10px;
+        min-width: 170px;
+        font-size: 18px;
+    }
+
+    .about-us, .servises {
+        padding-bottom: 0px;
+    }
+
+    .servises {
+        padding-bottom: 30px;
+    }
+
+    .content-wrapper_img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .audit-profile__box {
+        padding: 20px 0;
+    }
+
+    .audit-profile__text_wrapper {
+        width: 650px;
+        /* text-align: right; */
+    }
+
+    .audit-profoile__text {
+        max-width: 690px;
+        padding-left: 125px;
+        margin-right: 0;
+    }
+
+    .content-wrapper_img {
+        width: 200px;
+        height: 200px;
+        top: 37px;
+        left: 25px;
+    }
+
+    .audit-profile form {
+        margin-left: 125px;
+        margin-top: 10px;
+    }
+
+    .audit-profile_input {
+        margin-right: 9px;
+    }
+
+    .audit-profile_input {
+        width: 170px;
     }
     
 }
@@ -247,6 +448,81 @@
         left: 452px;
     }
 
+    .about-us_content, .servises_content, .Our-team_content, .contact_content {
+        padding: 20px 0 10px 27px;
+    }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 28px;
+        padding-left: 0;
+    }
+
+    .line {
+        top: 33px;
+        height: 3px;
+    }
+
+    .about-us__info {
+        padding: 10px 0px 0;
+    }
+
+    .about-us__info {
+        justify-content: center;
+    }
+    
+    .info-box_title {
+        font-size: 22px;
+    }
+
+    .info-box_text {
+        line-height: 18px;
+    }
+
+    .info-box {
+        width: 45%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    .servises {
+        padding-bottom: 30px;
+    }
+
+    .servises__content_box {
+        width: 262px;
+        height: 215px;
+    }
+    
+    .content-wrapper_img {
+        display: none;
+    }
+
+    .audit-profoile__text h2 {
+        font-size: 20px;
+    }
+
+    .audit-profoile__text {
+        max-width: 90%;
+        padding-left: 40px;
+        margin-right: 0;
+        max-width: 750px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .audit-profile form {
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .audit-profile_input,
+    .audit-profile_btn {
+        padding: 5px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -295,6 +571,78 @@
         top: 80px;
         left: 347px;
     }
+
+    .about-us_content, .servises_content, .Our-team_content, .contact_content {
+        padding: 20px 0 10px 20px;
+    }
+
+    .info-box_title {
+        font-size: 22px;
+    }
+
+    .info-box_text {
+        font-size: 12px;
+    }
+
+    .btn__wrapper {
+        padding: 7px 10px;
+        min-width: 160px;
+        font-size: 16px;
+    }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 26px;
+    }
+
+    .servises__content_title {
+        font-size: 20px;
+    }
+
+    .modal__content {
+        width: 430px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .modal__content h3 {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .modal__content .modifity-text {
+        font-size: 15px;
+    }
+
+    .modal__content .bold-text {
+        font-size: 15px;
+    }
+
+    .modal__content .modal_price {
+        font-size: 20px;
+    }
+
+    .modal_price .modal_price_sub {
+        font-size: 18px;
+    }
+
+    .modal_btn {
+        margin: 10px auto 0;
+        padding: 10px;
+    }
+
+    .audit-profile__box {
+        justify-content: start;
+    }
+
+    .audit-profoile__text {
+        max-width: 90%;
+    }
+
+    .audit-profile_input {
+        width: 135px;
+    } 
+    
+
 }
 
 @media (max-width: 460px) {
@@ -314,7 +662,7 @@
     }
 
     .block__aside {
-        width: 82px;
+        width: 90px;
         font-size: 10px;
         line-height: 16px;
         padding-left: 10px;
@@ -358,6 +706,59 @@
         top: 59px;
         left: 235px;
     }
+
+    .about-us_content, .servises_content, .Our-team_content, .contact_content {
+        padding: 14px 0 5px 15px;
+    }
+
+    .about-us_title h2, .servises_title h2, .contact_title h2 {
+        font-size: 20px;
+    }
+
+    .line {
+        top: 30px;
+        height: 2px;
+    }
+
+    .info-box_title {
+        font-size: 16px;
+    }
+
+    .info-box_text {
+        font-size: 10px;
+        line-height: 16px;
+        margin-right: 15px;
+    }
+
+    .btn__wrapper {
+        padding: 5px 5px;
+        min-width: 130px;
+        font-size: 13px;
+    }
+
+    .modal__content {
+        width: 310px;
+        margin-top: 60px;
+    }
+
+    .audit-profile form {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0 0;
+    }
+
+    .audit-profile__box {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 35px;
+    }
+
+    .audit-profile_input, .audit-profile_btn {
+        width: 150px;
+        margin: 10px 0 0;
+    }
+    
+
 }
 
 @media (max-width: 320px) {

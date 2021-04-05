@@ -79,6 +79,10 @@
         top: 100px;
         left: -5px;
     }
+
+    .Our-team_line {
+        top: 113px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -136,15 +140,11 @@
         left: 780px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
-        font-size: 45px;
-    }
-
     .line {
         top: 64px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
+    .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
         font-size: 40px;
     }
 
@@ -222,7 +222,7 @@
 
     .audit-profile__box {
         padding: 50px 0;
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
     .audit-profoile__text h2 {
@@ -244,11 +244,58 @@
         font-size: 18px;
     }
 
+    .Our-team_line {
+        top: 113px;
+    }
+
+    .contact_phone {
+        font-size: 24px;
+    }
+
+    .contact__adress_text {
+        font-size: 18px;
+    }
+    
+    .contact_form {
+        max-width: 60%;
+    }
+
+    .content__form_text .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .content__form_text {
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 991px) {
     .content-wrapper {
         max-width: 768px;
+    }
+
+    .header__contacts_social button {
+        font-size: 17px;
+        width: 160px;
+    }
+
+    .header__contacts_feedback a {
+        font-size: 18px;
+    }
+
+    .header__contacts_text {
+        font-size: 18px;
+    }
+
+    .header__nav {
+        font-size: 18px;
+        margin: 15px 0 10px;
+    }
+
+    .header__nav .item {
+        line-height: 20px;
     }
 
     .wrapper_logo {
@@ -308,7 +355,7 @@
         left: 595px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
+    .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
         font-size: 33px;
     }
 
@@ -384,13 +431,150 @@
         width: 170px;
     }
     
+    .Our-team_content, .contact_content {
+        padding: 10px 0 0px 30px;
+    }
+
+    .Our-team_line {
+        top: 75px;
+    }
+
+    .contact .line {
+        top: 24px;
+    }
+
+    .foorer .item__box {
+        max-width: 70%;
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 767px) {
+    
     .content-wrapper {
         max-width: 576px;
     }
 
+    .header {
+        padding: 15px 0;
+    }
+
+    /* menu */
+    .header__nav .item {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu {
+        position: fixed;
+        z-index: 999;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-transition: 0.6s all;
+        transition: 0.6s all;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 200px 0;
+        text-align: center;
+    }
+
+
+
+    .menu_active {
+        left: 0;
+    }
+
+    .menu_item {
+        padding-right: 0;
+        border: none;
+        margin-top: 50px;
+    }
+
+    .menu_link {
+        font-size: 20px;
+    }
+
+    .menu .menu_link {
+        padding: 20px 40px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 35px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 33px;
+        height: 12px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 3px;
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+      
+    .hamburger_active span {
+        margin-bottom: -2px;
+    }
+
+    .hamburger_active span:nth-child(1) {
+        -webkit-transform: translateY(3px) rotate(-45deg);
+                transform: translateY(3px) rotate(-45deg);
+        border-radius: 0;
+    }
+
+    .hamburger_active span:nth-child(2) {
+        display: none;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        -webkit-transform: translateY(3px) rotate(45deg);
+                transform: translateY(3px) rotate(45deg);
+        border-radius: 0;
+    }
+
+    .header__nav .item {
+        border-right: none;
+        font-size: 24px;
+    }
+
+    .menu_active {
+        left: 0;
+    }
+    
+    .header__contacts_text {
+        display: none;
+    }
+
+    .header__contacts_feedback a {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+         
     .wrapper_logo {
         min-height: 140px;
     }
@@ -452,7 +636,7 @@
         padding: 20px 0 10px 27px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
+    .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
         font-size: 28px;
         padding-left: 0;
     }
@@ -497,6 +681,12 @@
         display: none;
     }
 
+    .audit-profile {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+
     .audit-profoile__text h2 {
         font-size: 20px;
     }
@@ -523,11 +713,87 @@
         margin-top: 15px;
     }
 
+    .Our-team__wrapper {
+        padding: 0;
+    }
+
+    .contact__content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 30px 30px;
+    }
+
+    .contact .line {
+        top: 33px;
+    }
+
+    .box__contact {
+        margin-bottom: 30px;
+    }
+    
+    .contact_form {
+        max-width: 95%;
+    }
+
+    .contact__input {
+        padding: 10px 15px;
+    }
+
+    .foorer {
+        padding: 25px 0 30px;
+    }
+
+    .foorer .item__box {
+        max-width: 70%;
+    }
+
+    .foorer .item__box {
+        max-width: 85%;
+    }
+
+    .foorer .item__box .item {
+        font-size: 18px;
+    }
+    
 }
 
 @media (max-width: 575px) {
     .content-wrapper {
         max-width: 460px;
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .header__contacts_social button {
+        font-size: 14px;
+        width: 140px;
+        line-height: 15px;
+    }
+
+    .header__contacts_social .facebook a {
+        margin: 0px 5px;
+    }
+
+    .header__contacts_social a, .contact_social a {
+        font-size: 14px;
+        padding: 7px 12px 6px;
+        line-height: 15px;
+    }
+
+    .header__contacts_social .instagram a {
+        font-size: 19px;
+        padding: 5px 7px 4px;
+    }
+
+    .hamburger {
+        left: 20px;
+        top: 16px;
+    }
+
+    .header__contacts_feedback {
+        display: none;
     }
 
     .logo {
@@ -590,7 +856,7 @@
         font-size: 16px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
+    .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
         font-size: 26px;
     }
 
@@ -642,6 +908,22 @@
         width: 135px;
     } 
     
+    .content__form_text .title {
+        font-size: 22px;
+    }
+
+    .content__form_text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    } 
+
+    .foorer {
+        padding: 15px 0 20px;
+    }
+
+    .foorer .item__box .item {
+        font-size: 16px;
+    }
 
 }
 
@@ -711,7 +993,7 @@
         padding: 14px 0 5px 15px;
     }
 
-    .about-us_title h2, .servises_title h2, .contact_title h2 {
+    .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
         font-size: 20px;
     }
 
@@ -757,8 +1039,49 @@
         width: 150px;
         margin: 10px 0 0;
     }
-    
 
+    .line {
+        top: 22px;
+    }
+
+    .contact_phone {
+        font-size: 20px;
+    }
+
+    .contact__adress_text {
+        font-size: 16px;
+    }
+
+    .content__form_text .title {
+        font-size: 20px;
+    }
+
+    .content__form_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .contact__input {
+        font-size: 16px;
+    }
+
+    .contact_btn {
+        width: 175px;
+        font-size: 16px;
+    }
+
+    .contact .line {
+        top: 25px;
+    }
+
+    .foorer {
+        padding: 10px 0 15px;
+    }
+
+    .foorer .item__box .item {
+        font-size: 14px;
+    }
+    
 }
 
 @media (max-width: 320px) {
@@ -794,6 +1117,8 @@
         top: 58px;
         left: 207px;
     }
+
+    
 
 
 }

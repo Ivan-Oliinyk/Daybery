@@ -29,6 +29,7 @@ a {
 
 .header {
     padding: 30px 0 0 0;
+    position: relative;
 }
 
 .header__contacts {
@@ -107,7 +108,7 @@ a {
 
 .hamburger {
     display: none;
-  }
+}
 
 .header__nav .item {
     margin: 0 25px 0 0;
@@ -232,7 +233,8 @@ a {
 
 .about-us_title h2,
 .servises_title h2,
-.contact_title h2 {
+.contact_title h2,
+.Our-team_title h2 {
     font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
@@ -462,7 +464,7 @@ a {
     background-color: #000;
     min-height: 500px;
     color: #fff;
-    padding: 100px  0 50px;
+    padding: 50px  0 50px;
     position: relative;
 }
 
@@ -470,10 +472,10 @@ a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.Our-team_title h2{
+/* .Our-team_title h2{
     text-transform: uppercase;
     font-size: 60px;
-}
+} */
 
 .Our-team_line {
  top: 190px
@@ -684,6 +686,7 @@ a {
     color: #fff;
     background-image: linear-gradient(to bottom, #5749A6, #000);
     padding: 50px 0 80px;
+    font-family: Century Gothic;
 }
 
 .foorer .item__box {
@@ -697,4 +700,6 @@ a {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
 }

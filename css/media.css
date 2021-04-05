@@ -2,6 +2,7 @@
     .line {
         width: 50%;
     }
+    
 }
 
 @media (max-width: 1400px) {
@@ -465,6 +466,10 @@
         margin: 0;
         padding: 0;
     }
+
+    .link_team {
+        display: block;
+    }
     
     .menu {
         position: fixed;
@@ -479,7 +484,7 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        top: 0;
+        top: -20px;
         left: -100%;
         width: 50%;
         height: 100vh;
@@ -693,7 +698,7 @@
 
     .audit-profoile__text {
         max-width: 90%;
-        padding-left: 40px;
+        padding-left: 0;
         margin-right: 0;
         max-width: 750px;
         line-height: 22px;
@@ -701,7 +706,7 @@
     }
 
     .audit-profile form {
-        margin-left: 40px;
+        margin-left: 0;
         margin-top: 10px;
     }
 
@@ -778,7 +783,7 @@
 
     .header__contacts_social a, .contact_social a {
         font-size: 14px;
-        padding: 7px 12px 6px;
+        padding: 7px 12px 5px;
         line-height: 15px;
     }
 
@@ -797,13 +802,17 @@
     }
 
     .logo {
-        margin-left: 0px;
-        margin-top: 10px;
-        height: 100px;
-        width: 306px;
+        margin: 10px auto 0;
+        height: 110px;
+        width: 350px;
+    }
+
+    .block__aside {
+        display: none;
     }
 
     .all__team {
+        display: none;
         height: 159px;
         box-shadow: inset -6px 1px 30px #000;
     }
@@ -854,6 +863,10 @@
         padding: 7px 10px;
         min-width: 160px;
         font-size: 16px;
+    }
+
+    .info-box {
+        width: 90%;
     }
 
     .about-us_title h2, .servises_title h2, .contact_title h2, .Our-team_title h2 {
@@ -925,6 +938,13 @@
         font-size: 16px;
     }
 
+    .contact_social a {
+        font-size: 18px;
+        padding: 7px 12px 6px;
+        line-height: 15px;
+        width: 36px;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -937,10 +957,8 @@
     }
 
     .logo {
-        margin-left: 20px;
-        margin-top: 10px;
-        height: 62px;
-        width: 190px;
+        height: 70px;
+        width: 231px;
     }
 
     .block__aside {
@@ -1032,12 +1050,16 @@
     .audit-profile__box {
         display: flex;
         justify-content: center;
-        margin: 0 0 0 35px;
+        margin: 0 0 0 15px;
     }
 
     .audit-profile_input, .audit-profile_btn {
         width: 150px;
         margin: 10px 0 0;
+    }
+
+    .audit-profile_input {
+        width: 80%;
     }
 
     .line {

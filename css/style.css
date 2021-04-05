@@ -464,7 +464,7 @@ a {
     background-color: #000;
     min-height: 500px;
     color: #fff;
-    padding: 50px  0 50px;
+    padding: 50px  0 0;
     position: relative;
 }
 
@@ -477,8 +477,12 @@ a {
     font-size: 60px;
 } */
 
+.link_team {
+    display: none;
+}
+
 .Our-team_line {
- top: 190px
+ top: 139px
 }
 
 .Our-team__content {

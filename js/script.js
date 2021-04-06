@@ -134,7 +134,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     next.addEventListener('click', () => {
-        
+
         if (offset == +width.slice(0, width.length -2) * (slides.length-1)) {
             offset = +width.slice(0, width.length -2) * (slides.length-1);
         } else {
@@ -145,6 +145,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     prev.addEventListener('click', () => {
+
         if (offset == 0) {
             offset = 0;
         } else {
@@ -155,20 +156,47 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     
 
-    const linkToIvan = document.querySelector('.link_ivan'),
+    const linkToVictoria = document.querySelector('.link_victoria'),
+          linkToSasha = document.querySelector('.link_sasha'),
+          linkToAngelina = document.querySelector('.link_angelina'),
+          linkToAnna = document.querySelector('.link_anna'),
+          linkToIvan = document.querySelector('.link_ivan'),
           linkEduard = document.querySelector('.link_eduard');
 
-    linkToIvan.addEventListener('click', () => {
+
+    linkToVictoria.addEventListener('click', () => {
         offset = 0;
-        offset += +width.slice(0, width.length) * (slides.length);
-        slidesField.style.transform = `translateX(-${(offset)}px)`;
+        offset += +width.slice(0, width.length - 2) * 1;
+        
+    });
+
+    linkToSasha.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * 2;
+    });
+
+    linkToAngelina.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * 3;
+    });
+
+    linkToAnna.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * 4;
     });
 
     linkEduard.addEventListener('click', () => {
         offset = 0;
-        offset += +width.slice(0, width.length) * (slides.length);
-        slidesField.style.transform = `translateX(-${offset}px)`;
+        offset += +width.slice(0, width.length - 2) * 5;
     });
+
+    linkToIvan.addEventListener('click', () => {
+        offset = 0;
+        offset += +width.slice(0, width.length - 2) * 6;
+    });
+
+    
+
 
     
     // overlay 

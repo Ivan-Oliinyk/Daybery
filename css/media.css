@@ -270,6 +270,49 @@
         font-size: 20px;
     }
 
+    /* slider */ 
+    .Our-team__content {
+        width: 600px;
+    }
+
+    .Our-team__content_box {
+        width: 600px;
+    }
+    
+    .title_substrate {
+        max-width: 250px;
+    }
+
+    .slide__arrow {
+        top: 285px;
+    }
+
+    .offer__slider-prev {
+        left: 155px;
+    }
+    
+    .offer__slider-next {
+        right: 155px;
+    }
+
+    .Our-team__content_box_descr {
+        line-height: 26px;
+        font-size: 15px;
+    }
+
+    .Our-team__content_box_text h3 {
+        font-size: 18px;
+    }
+
+    .Our-team__content_box_sub-text {
+        font-size: 14px;
+    }
+
+    .Our-team__content_box_img {
+        width: 270px;
+        height: 305px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -449,6 +492,51 @@
         font-size: 18px;
     }
 
+
+    /* slider */ 
+    .Our-team__content {
+        width: 600px;
+    }
+
+    .Our-team__content_box {
+        width: 600px;
+    }
+    
+    .title_substrate {
+        max-width: 250px;
+    }
+
+    .slide__arrow {
+        top: 235px;
+        width: 30px;
+        height: 60px;
+    }
+
+    .offer__slider-prev {
+        left: 45px;
+    }
+    
+    .offer__slider-next {
+        right: 45px;
+    }
+
+    .Our-team__content_box_descr {
+        line-height: 26px;
+        font-size: 15px;
+    }
+
+    .Our-team__content_box_text h3 {
+        font-size: 16px;
+    }
+
+    .Our-team__content_box_sub-text {
+        font-size: 14px;
+    }
+
+    .Our-team__content_box_img {
+        width: 270px;
+        height: 305px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -499,8 +587,6 @@
         padding: 200px 0;
         text-align: center;
     }
-
-
 
     .menu_active {
         left: 0;
@@ -777,7 +863,53 @@
     .overlay .modal form .btn_submit {
         font-size: 16px;
     }
+
+    /* slider */ 
+    .Our-team__content {
+        width: 400px;
+    }
+
+    .Our-team__content_box {
+        width: 400px;
+    }
     
+    .title_substrate {
+        max-width: 215px;
+    }
+
+    .slide__arrow {
+        top: 235px;
+        width: 30px;
+        height: 60px;
+    }
+
+    .offer__slider-prev {
+        left: 45px;
+    }
+    
+    .offer__slider-next {
+        right: 45px;
+    }
+
+    .Our-team__content_box_img {
+        width: 275px;
+        height: 255px;
+    }
+    
+    .Our-team__content_box_text h3 {
+        font-size: 18px;
+        left: 10px;
+    }
+
+    .Our-team__content_box_sub-text {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+
+    .Our-team__content_box_descr {
+        line-height: 20px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -963,6 +1095,55 @@
         width: 36px;
     }
 
+    /* slider */ 
+    .Our-team__content {
+        width: 400px;
+    }
+    
+    .Our-team__content_box {
+        width: 400px;
+        flex-direction: column;
+    }
+    
+    .title_substrate {
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .slide__arrow {
+        top: 235px;
+        width: 30px;
+        height: 60px;
+    }
+
+    .offer__slider-prev {
+        left: 0;
+    }
+    
+    .offer__slider-next {
+        right: 0;
+    }
+
+    .Our-team__content_box_img {
+        width: 275px;
+        height: 255px;
+    }
+    
+    .Our-team__content_box_text h3 {
+        font-size: 18px;
+        left: 10px;
+    }
+
+    .Our-team__content_box_sub-text {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+
+    .Our-team__content_box_descr {
+        line-height: 20px;
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -1126,6 +1307,55 @@
     }
 
     .foorer .item__box .item {
+        font-size: 14px;
+    }
+
+    /* slider */ 
+    .Our-team__content {
+        width: 300px;
+    }
+    
+    .Our-team__content_box {
+        width: 300px;
+        flex-direction: column;
+    }
+    
+    .title_substrate {
+        max-width: 260px;
+        margin-top: 10px;
+    }
+
+    .slide__arrow {
+        top: 235px;
+        width: 30px;
+        height: 60px;
+    }
+
+    .offer__slider-prev {
+        left: 5px;
+    }
+    
+    .offer__slider-next {
+        right: 5px;
+    }
+
+    .Our-team__content_box_img {
+        width: 275px;
+        height: 255px;
+    }
+    
+    .Our-team__content_box_text h3 {
+        font-size: 18px;
+        left: 10px;
+    }
+
+    .Our-team__content_box_sub-text {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+
+    .Our-team__content_box_descr {
+        line-height: 20px;
         font-size: 14px;
     }
     

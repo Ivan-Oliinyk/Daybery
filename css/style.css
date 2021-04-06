@@ -465,7 +465,7 @@ a {
 
 .Our-team__wrapper {
     background-color: #000;
-    min-height: 500px;
+    /* min-height: 500px; */
     color: #fff;
     padding: 50px  0 0;
     position: relative;
@@ -499,7 +499,7 @@ a {
 .offer__slider-inner {
     display: flex;
     /* padding: 0 40px; */
-    width: 80%;
+    width: 730px;
     margin: 0 auto;
 }
 
@@ -533,7 +533,7 @@ a {
 }
 
 .Our-team__content_box_text {
-    width: 300px;
+    max-width: 300px;
     margin-top: 5px;
     margin-left: 20px;
 }
@@ -553,7 +553,7 @@ a {
     position: relative;
     background-color: #5749A6;
     height: 10px;
-    width: 350px;
+    max-width: 350px;
 }
 
 .Our-team__content_box_sub-text {

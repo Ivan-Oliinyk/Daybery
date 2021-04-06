@@ -25,7 +25,7 @@
             </div>
             <div class="header__contacts_social">
                 <div>
-                    <button>Заказать звонок</button>
+                    <button data-modal="order">Заказать звонок</button>
                 </div>
                 <div class="facebook">
                     <a href="https://www.facebook.com/Daiberyagency-102277114855604/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn__wrapper about-us_btn">Узнать больше</button>
+            <button class="btn__wrapper about-us_btn" data-modal="order">Узнать больше</button>
         </div>
     </section>
 
@@ -220,7 +220,7 @@
                             • Работа с хэштегами и гео<br>
                         </div>
                         <div class="modal_price">8000-10000<span class="modal_price_sub"> UAH</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
 
@@ -242,7 +242,7 @@
                             • Монтаж видео и другое.<br>
                         </div>
                         <div class="modal_price">от 2500<span class="modal_price_sub"> UAH/месяц</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
 
@@ -266,7 +266,7 @@
                             • Подписки/отписки/просмотры и ответы на сторис ЦА<br>
                         </div>
                         <div class="modal_price">от 1500 <span class="modal_price_sub">UAH</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
 
@@ -290,7 +290,7 @@
                             • и дюбые другие виды диджитал макетов<br>
                         </div>
                         <div class="modal_price">от 1500 <span class="modal_price_sub">UAH</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
 
@@ -313,7 +313,7 @@
                             • Съёмка сторис (мобильная)
                         </div>
                         <div class="modal_price">от 2000 <span class="modal_price_sub">UAH</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
 
@@ -336,16 +336,14 @@
                             • администрирование
                         </div>
                         <div class="modal_price">от 4000 <span class="modal_price_sub">UAH</span></div>
-                        <button class="modal_btn">Заказать</button>
+                        <button class="modal_btn" data-modal="order">Заказать</button>
                     </div>
                 </div>
         
             </div>
-            <button class="btn__wrapper about-us_btn servises_btn">Смотреть портфолио</button>
-            
+            <a href="https://drive.google.com/drive/folders/1dbSC_W-XLsDRgm_ucPBYYpm1YIcUNcrC?usp=sharing" class="btn__wrapper about-us_btn servises_btn target="_blank">Смотреть портфолио</a>
+            <!-- <button class="btn__wrapper about-us_btn servises_btn">Смотреть портфолио</button> -->
         </div>
-        
-
     </section>
 
     <!-- audit-profile -->
@@ -360,8 +358,8 @@
                 </div>
                 <div>
                     <form action="">
-                        <input class="audit-profile_input" type="text" placeholder="Ваше имя">
-                        <input class="audit-profile_input" type="text" placeholder="+38 (0..) ... ...">
+                        <input class="audit-profile_input" name="name" required type="text" placeholder="Ваше имя">
+                        <input class="audit-profile_input" name="phone" required type="number" placeholder="+38 (0..) ... ...">
                         <button class="audit-profile_btn">Хочу</button>
                     </form>
                 </div>
@@ -369,7 +367,7 @@
         </div>
     </section>
 
-    <!-- Our-team -->
+    
     <section class="Our-team__wrapper" id="ourTeam"> 
         <div class="content-wrapper">
             <div class="line Our-team_line"></div>
@@ -584,8 +582,6 @@
                             • 7 лет в дизайне<br>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -618,15 +614,15 @@
                         </div>
                     </div>
                 </div>
-                <form action="" class="contact_form">
+                <form action="" class="contact_form" action="#">
                     <div class="content__form_text">
                         <h3 class="title">Остались вопросы?</h3>
                         Оставьте заявку и наш маркетолог свяжется с вами,
                         чтобы проконсультировать по всем вопросам!
                     </div>
-                    <input class="contact__input" type="text" placeholder="Ваше имя">
-                    <input class="contact__input" type="number" placeholder="+38 (0..) ... ...">
-                    <input class="contact__input" type="text" placeholder="Ваш вопрос...">
+                    <input class="contact__input" name="name" required type="text" placeholder="Ваше имя">
+                    <input class="contact__input" name="phone" required type="number" placeholder="+38 (0..) ... ...">
+                    <input class="contact__input" name="tetxarea" id="#" type="text" placeholder="Ваш вопрос...">
                     <button class="contact_btn">Отправить</button>
                 </form>
             </div>
@@ -652,7 +648,45 @@
         </nav>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">
+                Просто заполните форму и мы перезвоним вам.
+            </div>
+            <form class="feed-form" action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required type="number" placeholder="Ваше телефон">
+                <input name="email" required type="email" placeholder="Ваше E-mail">
+                <textarea name="tetxarea" id="#" placeholder="Ваш впорос"></textarea>
+                <button class="btn_submit">Отправить</button>
+            </form>
+        </div>
+    
+        <div class="modal" id="order">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">
+                Просто заполните форму и мы перезвоним вам.
+            </div>
+            <form class="feed-form" action="#">
+                <input name="name" required type="text" placeholder="Ваше имя">
+                <input name="phone" required type="number" placeholder="Ваше телефон">
+                <button class="btn_submit">Записаться</button>
+            </form>
+        </div>
 
+        <div class="modal" id="Feedback">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">
+                Спасибо за вашу заявку!
+            </div>
+            <div class="modal_Feedback_text">
+                Мы свяжемся с вами в ближайшее время
+            </div>    
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

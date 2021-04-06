@@ -19,8 +19,8 @@ $mail->Password = 'NpM978659';   // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('Nastyalynx.Post.Mail@gmail.com', 'Nastyalynx');   // От кого письмо 
-$mail->addAddress('o.l.i.v.a.n.test.1991@gmail.com');     // Add a recipient
+$mail->setFrom('Nastyalynx.Post.Mail@gmail.com', 'D_A_I_B_E_R_Y');   // От кого письмо 
+$mail->addAddress('lorf1991@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -31,10 +31,12 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Данные';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '<br>
+	Пользователь оставил данные <br><br>
+
+	Имя: ' . $name . ' <br><br>
+
+	Номер телефона: ' . $phone . '<br><br>
+	
 	Вопрос :' . $textArea . '';
 
 if(!$mail->send()) {

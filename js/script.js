@@ -52,6 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const modalContents = document.querySelectorAll('.modal_wrapper'),
               closeModal = document.querySelectorAll('.modal__content .close'),
               btnServise = document.querySelectorAll('.btn_servise'),
+              modalBtns = document.querySelectorAll('.modal_btn'),
               parentContent = document.querySelector('.servises__content');
 
         function hideModal() {
@@ -95,6 +96,15 @@ window.addEventListener("DOMContentLoaded", () => {
         modalContents.forEach(modal => {
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
+                    hideModal();
+                }
+            });
+        });
+
+        //закрываем модельное окно при клике на кнопку
+        modalBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (e.target === btn) {
                     hideModal();
                 }
             });
@@ -161,7 +171,39 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     
+    // overlay 
+    function runOverlay() {
+        //modal window
 
+        $('[data-modal=consultation]').on('click', function() {
+            $('.overlay, #consultation').fadeIn('slow');
+        });
     
+        $('[data-modal=order]').on('click', function() {
+            $('.overlay, #order').fadeIn('slow');
+        });
+    
+        $('.modal_close').on('click', function() {
+            $('.overlay, #consultation, #order, #Feedback').fadeOut('slow');
+        });
+        
+        $('form').submit(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "mailer/smart.php",
+                data: $(this).serialize()
+            }).done(function() {
+                $(this).find("input").val("");
+                $('#consultation, #order').fadeOut();
+                $('.overlay, #Feedback').fadeIn('slow');
+    
+                $('form').trigger('reset');
+            });
+            return false;
+        });
+    }
+
+    runOverlay();
 
 });

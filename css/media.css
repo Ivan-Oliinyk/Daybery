@@ -759,6 +759,24 @@
     .foorer .item__box .item {
         font-size: 18px;
     }
+
+    .overlay .modal {
+        width: 300px;
+    }
+
+    .overlay .modal_title {
+        font-size: 20px;
+        margin: 30px 0 15px;
+    }
+
+    .overlay .modal form input, .overlay .modal form textarea {
+        width: 265px;
+        font-size: 16px;
+    }
+
+    .overlay .modal form .btn_submit {
+        font-size: 16px;
+    }
     
 }
 
@@ -1032,8 +1050,15 @@
 
     .btn__wrapper {
         padding: 5px 5px;
-        min-width: 130px;
+        min-width: 170px;
         font-size: 13px;
+        margin-top: 0;
+    }
+
+    .servises_btn {
+        padding: 10px 5px;
+        width: 140px;
+        font-size: 14px;
     }
 
     .modal__content {
@@ -1050,7 +1075,7 @@
     .audit-profile__box {
         display: flex;
         justify-content: center;
-        margin: 0 0 0 15px;
+        margin: 0 auto;
     }
 
     .audit-profile_input, .audit-profile_btn {

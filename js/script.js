@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", () => {
     
     let offset = 0;
 
-    slidesField.style.width = 100/3 * slides.length + '%';
+    slidesField.style.width = 100 * slides.length + '%';
     slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
     slidesWrapper.style.overflow = 'hidden';

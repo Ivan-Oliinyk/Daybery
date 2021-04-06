@@ -490,60 +490,70 @@ a {
 
 .Our-team__content {
     display: flex;
-    position: relative;
+    /* position: relative; */
+    /* padding: 0 40px; */
+    width: 730px;
+    margin: 0 auto;
 }
 
 .offer__slider-inner {
     display: flex;
-    padding: 0 40px;
+    /* padding: 0 40px; */
+    width: 80%;
+    margin: 0 auto;
 }
 
 .slide__arrow {
     width: 40px;
-    height: 100px;
+    height: 80px;
     background: url("../img/arrow.png") center center/contain no-repeat;
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    top: 215px;
+    top: 330px;
 }
 
 .offer__slider-prev {
-    left: 0;
+    left: 120px;
 }
 
 .offer__slider-next {
     transform: rotate(180deg);
-    right: 0;
+    right: 120px;
 }
 
 .Our-team__content_box {
-    margin: 30px 25px 0;
+    margin: 30px auto 0;
     /* width: 390px; */
-    width: calc(100%/3);
+    width: 730px;
+    display: flex;
     font-family: Century Gothic;
     font-weight: bold;
+    border: 1px solid transparent;
 }
 
 .Our-team__content_box_text {
-    margin-left: 115px;
-    width: 270px;
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
+
 
 .Our-team__content_box_text h3 {
     display: block;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 18px;
     position: absolute;
     top: -6px;
     left: 46px;
+    margin-bottom: 40px;
 }
 
 .title_substrate {
     position: relative;
     background-color: #5749A6;
-    height: 8px;
-    width: 270px;
+    height: 10px;
+    width: 350px;
 }
 
 .Our-team__content_box_sub-text {
@@ -555,13 +565,18 @@ a {
     display: block;
 }
 
+.Our-team__text {
+    display: flex;
+    flex-direction: column;
+}
+
 .Our-team__content_box_sub-text:nth-child(2) {
     text-align: right;
 }
 
 .Our-team__content_box_img {
-    width: 220px;
-    height: 350px;
+    width: 285px;
+    height: 390px;
     margin: 0 auto;
 }
 
@@ -600,8 +615,20 @@ a {
 .Our-team__content_box_descr {
     font-size: 16px;
     font-weight: 600;
-    line-height: 28px;
-    margin-top: 20px;
+    line-height: 32px;
+    margin-left: 35px;
+    max-width: 450px;
+}
+
+.Our-team__content_box_descr li {
+    position: relative;
+}
+
+.Our-team__content_box_descr li:before {
+    content: "•";
+    position: absolute;
+    top: 0;
+    left: -15px;
 }
 
 .contact {

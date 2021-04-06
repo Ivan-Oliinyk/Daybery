@@ -130,18 +130,18 @@ window.addEventListener("DOMContentLoaded", () => {
     slidesWrapper.style.overflow = 'hidden';
 
     slides.forEach(slide => {
-        slide.style.width = width/3;
+        slide.style.width = width;
     });
 
     next.addEventListener('click', () => {
         
-        if (offset == +width.slice(0, width.length -2) * (slides.length - 3)) {
-            offset = +width.slice(0, width.length -2) * (slides.length - 3);
+        if (offset == +width.slice(0, width.length -2) * (slides.length-1)) {
+            offset = +width.slice(0, width.length -2) * (slides.length-1);
         } else {
             offset += +width.slice(0, width.length - 2);
         }
 
-        slidesField.style.transform =`translateX(-${offset/3}px)`;
+        slidesField.style.transform =`translateX(-${offset}px)`;
     });
 
     prev.addEventListener('click', () => {
@@ -151,7 +151,7 @@ window.addEventListener("DOMContentLoaded", () => {
             offset -= +width.slice(0, width.length - 2);
         }
 
-        slidesField.style.transform =`translateX(-${offset/3}px)`;
+        slidesField.style.transform =`translateX(-${offset}px)`;
     });
     
 
@@ -160,14 +160,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     linkToIvan.addEventListener('click', () => {
         offset = 0;
-        offset += +width.slice(0, width.length - 2) * (slides.length - 3);
-        slidesField.style.transform = `translateX(-${(offset/3)}px)`;
+        offset += +width.slice(0, width.length) * (slides.length);
+        slidesField.style.transform = `translateX(-${(offset)}px)`;
     });
 
     linkEduard.addEventListener('click', () => {
         offset = 0;
-        offset += +width.slice(0, width.length - 2) * (slides.length - 3);
-        slidesField.style.transform = `translateX(-${offset/3}px)`;
+        offset += +width.slice(0, width.length) * (slides.length);
+        slidesField.style.transform = `translateX(-${offset}px)`;
     });
 
     

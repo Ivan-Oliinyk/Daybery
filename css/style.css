@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -33,21 +41,34 @@ a {
 }
 
 .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .header__contacts_feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .header__contacts_text {
     color: #fff;
     font-size: 20px;
     margin-right: 40px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -57,6 +78,8 @@ a {
 }
 
 .header__contacts_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -70,11 +93,14 @@ a {
     width: 280px;
     cursor: pointer;
     border-color: #4e4192;
-    box-shadow: 0 0 20px #4e4192;
+    -webkit-box-shadow: 0 0 20px #4e4192;
+            box-shadow: 0 0 20px #4e4192;
 }
 
 .tel_hover:hover {
     color: #4e4192;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -86,7 +112,8 @@ a {
     padding: 7px 12px 6px;
     line-height: 24px;
     border-radius: 5px;
-    box-shadow: 2px 2px 20px #4e4192;
+    -webkit-box-shadow: 2px 2px 20px #4e4192;
+            box-shadow: 2px 2px 20px #4e4192;
 }
 
 .header__contacts_social .facebook a {
@@ -99,6 +126,8 @@ a {
 }
 
 .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
     margin-top: 20px;
@@ -115,23 +144,35 @@ a {
     border-right: 2px solid #fff;
     padding-right: 25px;
     line-height: 30px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
 .header__nav .item a:hover {
     color: #4e4192;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
 .first-block_wrapper {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#5749A6), to(#000));
+    background-image: -o-linear-gradient(bottom left, #5749A6, #000);
     background-image: linear-gradient(to top right, #5749A6, #000);
 }
 
 .wrapper_logo {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#312947), to(#201D1D));
+    background-image: -o-linear-gradient(top left, #312947, #201D1D);
     background-image: linear-gradient(to bottom right, #312947, #201D1D);
     min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .logo {
@@ -149,27 +190,39 @@ a {
     line-height: 52px;
     padding-left: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    box-shadow: -15px 15px 30px #000;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: -15px 15px 30px #000;
+            box-shadow: -15px 15px 30px #000;
 }
 
 .all__team {
     background: url("../img/photo-all-team.jpg") center center / contain no-repeat;
     height: 456px;
     position: relative;
-    box-shadow: inset -15px 15px 30px #000;
+    -webkit-box-shadow: inset -15px 15px 30px #000;
+            box-shadow: inset -15px 15px 30px #000;
 }
 
 .link__team-membres {
     position: absolute;
     width: 170px;
     min-height: 50px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .link__team-membres:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -228,6 +281,8 @@ a {
 .about-us_title,
 .servises_title,
 .Our-team_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -253,9 +308,13 @@ a {
 .about-us__info {
     font-family: Century Gothic;
     padding: 50px 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .info-box {
@@ -290,11 +349,16 @@ a {
 
 .about-us_btn {
     background-color: #4e2060;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .about-us_btn:hover {
-    box-shadow: inset -2px -2px 20px 3px #1f0529;;
+    -webkit-box-shadow: inset -2px -2px 20px 3px #1f0529;
+            box-shadow: inset -2px -2px 20px 3px #1f0529;;
+    -webkit-transition: 0.3s;;
+    -o-transition: 0.3s;;
     transition: 0.3s;
 }
 
@@ -307,23 +371,36 @@ a {
 }
 
 .servises__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 50px 0 30px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .servises__content_box {
     width: 410px;
     height: 309px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
-    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
 }
 
 .servises__content_box:hover {
-    filter: brightness(180%);
-    transform: scale(1.1);
+    -webkit-filter: brightness(180%);
+            filter: brightness(180%);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
     overflow: hidden;
     display: block;
@@ -357,7 +434,9 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-family: Century Gothic;
     font-weight: 400;
     text-transform: uppercase;
@@ -373,15 +452,22 @@ a {
     background-color: #5749A6;
     border-color: #5749A6;
     margin-top: 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .servises_btn:hover {
-    box-shadow: inset 0px 0px 16px 3px #2c1999;
+    -webkit-box-shadow: inset 0px 0px 16px 3px #2c1999;
+            box-shadow: inset 0px 0px 16px 3px #2c1999;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .audit-profile {
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#5749A6), to(#000));
+    background-image: -o-linear-gradient(bottom left, #5749A6, #000);
     background-image: linear-gradient(to top right, #5749A6, #000);
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -389,10 +475,15 @@ a {
 }
 
 .audit-profile__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 100px 0;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: relative;
 }
 
@@ -426,6 +517,8 @@ a {
 
 .audit-profile form {
     margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -442,6 +535,26 @@ a {
     letter-spacing: 1px;
 }
 
+.audit-profile_input::-webkit-input-placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.audit-profile_input::-moz-placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.audit-profile_input:-ms-input-placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.audit-profile_input::-ms-input-placeholder {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
 .audit-profile_input::placeholder {
     color: #fff;
     letter-spacing: 2px;
@@ -456,9 +569,12 @@ a {
     color: #fff;
     border-radius: 5px;
     min-width: 100px;
-    box-shadow: -2px -2px 10px black;
+    -webkit-box-shadow: -2px -2px 10px black;
+            box-shadow: -2px -2px 10px black;
     display: block;
     font-size: 24px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -489,6 +605,8 @@ a {
 }
 
 .Our-team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* position: relative; */
     /* padding: 0 40px; */
@@ -497,6 +615,8 @@ a {
 }
 
 .offer__slider-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* padding: 0 40px; */
     width: 730px;
@@ -518,7 +638,9 @@ a {
 }
 
 .offer__slider-next {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     right: 120px;
 }
 
@@ -526,6 +648,8 @@ a {
     margin: 30px auto 0;
     /* width: 390px; */
     width: 730px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: Century Gothic;
     font-weight: bold;
@@ -566,8 +690,13 @@ a {
 }
 
 .Our-team__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .Our-team__content_box_sub-text:nth-child(2) {
@@ -637,8 +766,12 @@ a {
 }
 
 .contact__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 50px 0 30px 30px;
     font-family: Century Gothic;
 }
@@ -655,8 +788,12 @@ a {
 }
 
 .contact_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .contact_social a {
@@ -672,8 +809,13 @@ a {
 }
 
 .contact_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 50%;
 }
 
@@ -718,14 +860,20 @@ a {
 
 .foorer {
     color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5749A6), to(#000));
+    background-image: -o-linear-gradient(top, #5749A6, #000);
     background-image: linear-gradient(to bottom, #5749A6, #000);
     padding: 30px 0 35px;
     font-family: Century Gothic;
 }
 
 .foorer .item__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     max-width: 50%;
 }
@@ -734,6 +882,8 @@ a {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     color: #fff;
 }
@@ -757,7 +907,8 @@ a {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     min-height: 160px;
     width: 400px;
     background-color: #5749A6;

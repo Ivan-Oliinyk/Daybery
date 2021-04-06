@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media (min-width: 1920px) {
     .line {
         width: 50%;
@@ -579,10 +586,14 @@
         padding: 20px 15px;
         background-color: rgba(0, 0, 0, 0.8);
         -webkit-transition: 0.6s all;
+        -o-transition: 0.6s all;
         transition: 0.6s all;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         align-items: center;
         padding: 200px 0;
         text-align: center;
@@ -612,7 +623,8 @@
         left: 15px;
         top: 35px;
         -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
         width: 33px;
         height: 12px;
         cursor: pointer;
@@ -625,6 +637,7 @@
         background-color: #fff;
         margin-bottom: 3px;
         -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
         transition: 0.5s all;
     }
       
@@ -634,7 +647,8 @@
 
     .hamburger_active span:nth-child(1) {
         -webkit-transform: translateY(3px) rotate(-45deg);
-                transform: translateY(3px) rotate(-45deg);
+                -ms-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
         border-radius: 0;
     }
 
@@ -644,7 +658,8 @@
 
     .hamburger_active span:nth-child(3) {
         -webkit-transform: translateY(3px) rotate(45deg);
-                transform: translateY(3px) rotate(45deg);
+                -ms-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
         border-radius: 0;
     }
 
@@ -742,7 +757,9 @@
     }
 
     .about-us__info {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     
     .info-box_title {
@@ -773,7 +790,9 @@
     }
 
     .audit-profile {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         max-width: 100%;
     }
 
@@ -809,8 +828,13 @@
     }
 
     .contact__content {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 20px 0 30px 30px;
     }
 
@@ -964,7 +988,8 @@
     .all__team {
         display: none;
         height: 159px;
-        box-shadow: inset -6px 1px 30px #000;
+        -webkit-box-shadow: inset -6px 1px 30px #000;
+                box-shadow: inset -6px 1px 30px #000;
     }
 
     .link_anna {
@@ -1060,7 +1085,9 @@
     }
 
     .audit-profile__box {
-        justify-content: start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start;
     }
 
     .audit-profoile__text {
@@ -1102,7 +1129,10 @@
     
     .Our-team__content_box {
         width: 400px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     .title_substrate {
@@ -1248,14 +1278,23 @@
     }
 
     .audit-profile form {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin: 15px 0 0;
     }
 
     .audit-profile__box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 0 auto;
     }
 
@@ -1317,7 +1356,10 @@
     
     .Our-team__content_box {
         width: 300px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     .title_substrate {
